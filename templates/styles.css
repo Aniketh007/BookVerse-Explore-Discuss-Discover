@@ -1,0 +1,19 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('background.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-attachment: fixed; /* Fixed background image */
+}
+
+nav {
+    background-color: rgb(201, 116, 5); /* Semi-transparent white background for nav */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: right;
+}
+
+.nav-link {
+    text-decoration: none; /* Remove default underline */
+    color: black; /* Set link color */
+    margin-right: 20px; /* Add margin between links */
+}
