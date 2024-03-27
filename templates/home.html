@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookVerse: Explore, Discover, Discuss</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-
-    <!-- <style>
-        .Container{
-            background-image: url(background.png);
-        }
-    </style> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 </head>
 <body>
     <nav>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Suggestions</a>
-        <a href="#" class="nav-link">Student Profile</a>
-        <a href="#" class="nav-link">Sign Out</a>
+        <ul>
+            <li><a href="#">BookVerse</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Suggestions</a></li>
+            <li class="hideOnMobile"><a href="#">Student Profile</a></li>
+            <li class="hideOnMobile"><a href="#">Sign Out</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Suggestions</a></li>
+            <li><a href="#">Student Profile</a></li>
+            <li><a href="#">Sign Out</a></li>
+        </ul>
     </nav>
-    <div class="Container">
-        <h1>Hello World</h1>
-    </div>
-    <h1>
-        Welcome to BookVerse!
-    </h1>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
