@@ -1,0 +1,61 @@
+.Container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.content{
+    background-color: rgb(201, 116, 5);
+    padding: 30px 30px;
+    font-size: large;
+    text-align: center;
+}
+
+body{
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+}
+
+label{
+    display: inline-block;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* box-sizing: border-box; */
+}
+
+.name-field{
+    padding-top: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.roll-field{
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.submit-button{
+    font-size: 25px;
+    margin-top: 20px;
+    width: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer; 
+}
+
+.submit-button:hover {
+    background-color: #000; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}

@@ -91,3 +91,9 @@ nav a:hover{
       width: 100%;
     }
   }
+
+
+  .Container1{
+    display: flex;
+    justify-content: center;
+  }
